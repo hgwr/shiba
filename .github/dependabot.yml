@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: bundler
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "01:00"
+    timezone: Asia/Tokyo
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: activerecord
+    versions:
+    - 6.1.1
+    - 6.1.2
+    - 6.1.2.1
+    - 6.1.3
